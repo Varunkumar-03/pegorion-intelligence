@@ -1,0 +1,29 @@
+.switcher {
+  position: fixed;
+  top: 12px;
+  left: 256px;
+  z-index: 60;
+  display: flex;
+  gap: 3px;
+  padding: 3px;
+  border: 1px solid rgba(194, 207, 226, .9);
+  background: rgba(255, 255, 255, .94);
+  box-shadow: 0 5px 18px rgba(24, 45, 76, .09);
+  backdrop-filter: blur(12px);
+}
+
+.link {
+  color: #708097;
+  text-decoration: none;
+  padding: 7px 11px;
+  font: 700 10px/1 Manrope, Arial, sans-serif;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.link:hover { color: #244d86; background: #eef4fd; }
+
+@media (max-width: 760px) {
+  .switcher { left: auto; right: 10px; top: 9px; }
+  .link { padding: 6px 8px; font-size: 9px; }
+}
